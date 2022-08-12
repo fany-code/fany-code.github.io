@@ -1,0 +1,365 @@
+#site{
+    /* Aqui definiremos a cor de fundo da página */
+    background-color:#266466;
+  }
+
+body, p, h1, ul, li, blockquote {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 50%;
+    width: 50%;
+    border-radius: 25px;
+    padding: 50px;
+    display: block;
+    margin: 0px auto;
+}
+
+:root {
+    --cor-fundo: rgb(34, 41, 37);
+    --cor-hover: rgb(118, 180, 145);
+    --cor-primaria: rgb(231, 241, 236);
+}
+
+.dp-menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.dp-menu ul {
+    background-color: var(--cor-fundo);
+}
+
+.dp-menu ul li {
+    display: inline;
+    position: relative;
+}
+
+.dp-menu ul li a {
+    color: var(--cor-primaria);
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    transition: background .3s;
+}
+
+.dp-menu ul li a:hover {
+    background-color: var(--cor-hover);
+}
+
+/*sub menu*/
+.dp-menu ul ul {
+    display: none;
+    left: 0;
+    position: absolute;
+}
+
+.dp-menu ul li:hover ul {
+    display: block;
+}
+
+.dp-menu ul ul {
+    width: 150px
+}
+
+.dp-menu ul ul li a {
+    display: block;
+}
+.title {
+    font-family:'open_sansbold';
+    font-size: 3em;
+    letter-spacing: 5px;
+    text-align: center;
+    color: #35dfe3;
+    background-image: -webkit-linear-gradient(50deg, #35dfe3, #35dfe3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: hue 5s infinite linear;
+  }
+  @-webkit-keyframes hue {
+    from {
+      -webkit-filter: hue-rotate(0deg);
+    }
+    to {
+      -webkit-filter: hue-rotate(-360deg);
+    }
+}
+.title h1 {
+    font-size: 1.5em;
+    line-height: 0.9;
+}
+
+.title span {
+    font-size: 0.45em;
+    font-style: italic;
+    margin-left: 1px;
+}
+
+section {
+    margin: 10px 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.title-section {
+    font-family: sans-serif;
+    color: rgba(0, 0, 0, 0.8);
+    margin-bottom: 30px;
+}
+
+#projects-list {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0px;
+}
+
+
+#projects-list > li {
+    color: white;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+    width: 30%;
+    padding: 5px 10px;
+    list-style: none;
+    background: rgb(4, 4, 43);
+}
+
+#projects-list h4 {
+    font-family: sans-serif;
+    margin: 10px 0;
+}
+
+#projects-list > li > p {
+    font-size: 15px;
+}
+#projects-list ul {
+    position: relative;
+    margin: 15px 7px;
+    list-style: none;
+    font-family: sans-serif;
+    font-size: 15px;
+    background: rgba(255, 255, 255, 0.2);
+    color:white;
+    padding: 10px;
+}
+
+.caracteristicas {
+    display: flex;
+    align-items: flex-start;
+}
+
+.folha {
+    width:auto;
+    height:auto;
+    background: #015169;
+    padding:20px;
+}
+
+.folha h1 strong { font-family:'open_sansbold'; } 
+
+.folha p {
+    padding: 10px 20px;
+    font-family:'open_sansregular';
+    font-size: 1.5em;
+    color: #f4f4f4;
+}
+
+.perfil {
+    width:auto;
+    height:auto;
+    padding: 20px;
+    border-radius: 55px;
+    background: linear-gradient(135deg, #015169, #053c69);
+}
+
+.perfil p{
+    font-size: 1.55em;
+    font-family: "FreeMono", monospace;
+    text-align: center;
+    line-height: 1.5;
+    color: floralwhite;
+    padding: 30px;
+    border-radius: 5px;
+    background: linear-gradient(135deg, #015169, #053c69);
+}
+
+.citacao,
+.atributos {
+    align-self: start;
+    padding: 30px;
+    border-radius: 5px;
+    background: linear-gradient(135deg, #015169, #053c69);
+}
+
+.citacao p {
+    font-size: 1.5em;
+    font-style: italic;
+    text-align: center;
+    max-width: 500px;
+    margin: 0 auto;
+    color: white;
+}
+
+.atributos li {
+    color: white;
+    font-family: Courier, monospace;
+    font-size: 1.25em;
+    padding: 15px;
+}
+
+.atributos li+li {
+    border-top: 2px solid #046d8d;
+}
+
+#p1{
+    color: white;
+    text-align: center;
+    margin: 0;
+}
+
+[data-anime] {
+    opacity: 0;
+    transition: .5s;
+}
+
+[data-anime="folha"] {
+    transform: translate3d(50px, 50px, 50px);
+}
+
+[data-anime="left"] {
+    transform: translate3d(-50px, 0, 0);
+}
+
+[data-anime="right"] {
+    transform: translate3d(50px, 0, 0);
+}
+
+[data-anime="top"] {
+    transform: translate3d(0, -50px, 0);
+}
+
+[data-anime].animate {
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+}
+
+@media (max-width: 760px) {
+    .header {
+        grid-template-columns: auto;
+    }
+
+    .logo {
+        margin-bottom: 20px;
+    }
+
+    .header nav a {
+        font-size: 1em;
+    }
+
+    .header li+li {
+        margin-left: 10px;
+    }
+}
+
+.content {
+    grid-area: content;
+    margin: 0 auto;
+}
+
+
+.main_footer_copy { background-color: rgb(34, 41, 37); width:100%; float:left; text-align:center; padding:1.5em 0em; }
+.main_footer_copy p { font-family:'open_sanslight'; font-size:1em; color:#e1e0e0; height:20px; }
+.main_footer_copy .m-b-footer   { margin-bottom:0.5em; }
+.main_footer_copy .by a { color:#fff; text-decoration:none; }
+.main_footer_copy .by a:hover { text-decoration:underline; }
+.main_footer_copy .by i { font-size:0.96em; margin-right:3px; color:#e82626; }
+
+@media (min-width:48em){
+.colfooter  { width:30%; margin-right:5%; margin-bottom:0; }
+.colfooter:nth-of-type(3n+0){ margin-right:0; border-right:0;}
+}
+/*
+.footer {
+    
+    grid-area: footer;
+    background: linear-gradient(135deg, #015169, #053c69);
+    background-color:#266466;
+}
+*/
+.content {
+    display: grid;
+    max-width: 900px;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+    padding: 30px;
+}
+
+@media (max-width: 600px) {
+    .content {
+        grid-template-columns: auto;
+    }
+}
+
+.col-wide {  
+    grid-column: 1 / -1;
+}
+
+p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    letter-spacing: -.005em;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.informacoes p+p {
+    margin-top: 30px;
+}
+
+figure {
+    height: auto;
+    width: auto;
+}
+
+img.scaled {
+    width: 60%;
+}
+
+
+.titulo h2{
+    text-align: center;
+    font-size: 40px;
+    text-transform: capitalize;
+    text-decoration: blink;
+    color: azure;
+    /*color: rgb(0, 0, 0);*/
+    margin: 10px 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+   /* border-radius: 5px;  */  
+}
+
+.titulo h3{
+    text-align: center;
+    font-size: 20px;
+    text-transform: capitalize;
+    text-decoration: blink;
+    color: black;
+    /*color: rgb(0, 0, 0);*/
+    margin: 10px 10px;
+   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+   /* border-radius: 5px;  */
+   
+}
