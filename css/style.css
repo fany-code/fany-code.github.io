@@ -1,6 +1,6 @@
 #site{
     /* Aqui definiremos a cor de fundo da página */
-    background-color:#266466;
+    background-color: aliceblue;
   }
 
 body, p, h1, ul, li, blockquote {
@@ -342,7 +342,7 @@ img.scaled {
     font-size: 40px;
     text-transform: capitalize;
     text-decoration: blink;
-    color: azure;
+    color: black;
     /*color: rgb(0, 0, 0);*/
     margin: 10px 10px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
